@@ -192,19 +192,20 @@ def main():
     # 写出
     write_outputs(block_rules, raw_rules, domains, sources)
 
-    # 校验 + 统计
-    for name in ("merged_adblock.txt","merged_hosts.txt","merged_domains.txt"):
-        p=os.path.join(OUT_DIR,name)
-        with open(p,"rb") as f: sha=hashlib.sha256(f.read()).hexdigest()[:16]
-        print(f"Wrote {p}  sha256[:16}={sha}")
+   # 校验 + 统计
+for name in ("merged_adblock.txt","merged_hosts.txt","merged_domains.txt"):
+    p = os.path.join(OUT_DIR, name)
+    with open(p, "rb") as f:
+        sha = hashlib.sha256(f.read()).hexdigest()[:16]
+    print(f"Wrote {p}  sha256[:16]={sha}")
 
-    print(f"去重前: {stats['total_before']} 行")
-    print(f"去重后: {stats['total_after']} 行")
-    if stats["total_before"] > 0:
-        pct = (stats["total_before"] - stats["total_after"]) / stats["total_before"] * 100
-    else:
-        pct = 0.0
-    print(f"去掉重复/无效: {stats['dedup_removed']} 行 ({pct:.2f}%)")
+print(f"去重前: {stats['total_before']} 行")
+print(f"去重后: {stats['total_after']} 行")
+if stats["total_before"] > 0:
+    pct = (stats["total_before"] - stats["total_after"]) / stats["total_before"] * 100
+else:
+    pct = 0.0
+print(f"去掉重复/无效: {stats['dedup_removed']} 行 ({pct:.2f}%)")
 
 if __name__=="__main__":
     main()
