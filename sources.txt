@@ -10,3 +10,4 @@ https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
 https://raw.githubusercontent.com/damengzhu/abpmerge/main/abpmerge.txt
 https://raw.githubusercontent.com/Piggy-Cat-bit-shadow/adguard-rule-merge/main/custom_whitelist.txt
 https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
+https://small.oisd.nl
