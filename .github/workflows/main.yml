@@ -1,0 +1,32 @@
+name: Build merged blocklists
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 18 * * *"  # 每天日本时间凌晨3点运行
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run merge script
+        run: python scripts/merge.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/*.txt
+          git commit -m "Auto update blocklists $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes"
+          git push
