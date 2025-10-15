@@ -10,4 +10,3 @@ https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt
 https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt
-https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
