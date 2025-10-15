@@ -8,3 +8,4 @@ https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-a
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
 https://raw.githubusercontent.com/damengzhu/abpmerge/main/abpmerge.txt
+https://raw.githubusercontent.com/Piggy-Cat-bit-shadow/adguard-rule-collection/main/custom_whitelist.txt
