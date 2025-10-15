@@ -7,3 +7,4 @@ https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt
 https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
+https://raw.githubusercontent.com/damengzhu/abpmerge/main/abpmerge.txt
