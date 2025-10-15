@@ -71,7 +71,6 @@ def normalize_and_dedupe(all_lines:list, keep_idna=True):
             d = idna_norm(m.group("dom")) if keep_idna else m.group("dom").lower()
             v = m.group("val").strip()
             dnsrewrite_map.setdefault(d, set()).add(v)
-            # 同时把域名计入“受控集”，便于后续冲突消解
             block_domains.add(d)
             continue
 
@@ -85,7 +84,6 @@ def normalize_and_dedupe(all_lines:list, keep_idna=True):
 
         # ---- 3) 其它网络规则（保留文本、尽力抽域名同步到 block 集合用于域名级去重）----
         if s.startswith('@@'):
-            # 白名单规则：保留文本，同时同步域名（若能抽到）
             m2 = R_DOMAIN.search(s)
             if m2:
                 allow_domains.add(idna_norm(m2.group(1)) if keep_idna else m2.group(1).lower())
@@ -102,17 +100,14 @@ def normalize_and_dedupe(all_lines:list, keep_idna=True):
         # print("ignored:", s)
 
     # ---- 4) 冲突处理：白名单优先（域名层面）----
-    # 若 @@||d^ 存在，则移除该域名的阻止与重写/类型限制
     for d in list(allow_domains):
         block_domains.discard(d)
         dnsrewrite_map.pop(d, None)
         dnstype_map.pop(d, None)
 
     # ---- 5) 产出规范化列表（稳定排序）----
-    # a) 纯域阻止 → 规则行
     block_rules = [f"||{d}^" for d in sorted(block_domains)]
 
-    # b) dnsrewrite/dnstype 去重后输出（同一域相同值只保留一次）
     for d in sorted(dnsrewrite_map.keys()):
         for v in sorted(dnsrewrite_map[d]):
             block_rules.append(f"||{d}^$dnsrewrite={v}")
@@ -120,13 +115,10 @@ def normalize_and_dedupe(all_lines:list, keep_idna=True):
         for v in sorted(dnstype_map[d]):
             block_rules.append(f"||{d}^$dnstype={v}")
 
-    # c) 其它网络规则文本去重
     rules_sorted = sorted(raw_rules)
 
-    # d) 纯域名/hosts 版本（只基于最终阻止集合，不含被白名单覆盖的域）
     domains = sorted(set(block_domains) | set(dnsrewrite_map.keys()) | set(dnstype_map.keys()))
 
-    # 统计
     total_after = len(block_rules) + len(rules_sorted)
     stats = {
         "total_before": total_before,
@@ -150,18 +142,15 @@ def header(title, sources):
     return "\n".join(h)
 
 def write_outputs(block_rules, raw_rules, domains, sources):
-    # 1) Adblock 合并版
     with open(os.path.join(OUT_DIR,"merged_adblock.txt"),"w",encoding="utf-8") as f:
         f.write(header("Unified Adblock list for AdGuard Home (DNS)", sources))
         for r in block_rules: f.write(r+"\n")
         for r in raw_rules:   f.write(r+"\n")
 
-    # 2) hosts
     with open(os.path.join(OUT_DIR,"merged_hosts.txt"),"w",encoding="utf-8") as f:
         f.write("# 0.0.0.0 hosts merged\n")
         for d in domains: f.write(f"0.0.0.0 {d}\n")
 
-    # 3) 纯域名
     with open(os.path.join(OUT_DIR,"merged_domains.txt"),"w",encoding="utf-8") as f:
         for d in domains: f.write(d+"\n")
 
@@ -173,11 +162,12 @@ def main():
     sources = []
     with open(SRC_FILE,"r",encoding="utf-8",errors="ignore") as f:
         for line in f:
-            u=line.strip()
-            if u and not u.startswith("#"): sources.append(u)
+            u = line.strip()
+            if u and not u.startswith("#"):
+                sources.append(u)
 
     # 拉取
-    lines=[]
+    lines = []
     for url in sources:
         try:
             txt = fetch(url)
@@ -192,20 +182,20 @@ def main():
     # 写出
     write_outputs(block_rules, raw_rules, domains, sources)
 
-   # 校验 + 统计
-for name in ("merged_adblock.txt","merged_hosts.txt","merged_domains.txt"):
-    p = os.path.join(OUT_DIR, name)
-    with open(p, "rb") as f:
-        sha = hashlib.sha256(f.read()).hexdigest()[:16]
-    print(f"Wrote {p}  sha256[:16]={sha}")
+    # 校验 + 统计（⚠️ 这些必须在 main() 内）
+    for name in ("merged_adblock.txt","merged_hosts.txt","merged_domains.txt"):
+        p = os.path.join(OUT_DIR, name)
+        with open(p, "rb") as f:
+            sha = hashlib.sha256(f.read()).hexdigest()[:16]
+        print(f"Wrote {p}  sha256[:16]={sha}")
 
-print(f"去重前: {stats['total_before']} 行")
-print(f"去重后: {stats['total_after']} 行")
-if stats["total_before"] > 0:
-    pct = (stats["total_before"] - stats["total_after"]) / stats["total_before"] * 100
-else:
-    pct = 0.0
-print(f"去掉重复/无效: {stats['dedup_removed']} 行 ({pct:.2f}%)")
+    print(f"去重前: {stats['total_before']} 行")
+    print(f"去重后: {stats['total_after']} 行")
+    if stats["total_before"] > 0:
+        pct = (stats["total_before"] - stats["total_after"]) / stats["total_before"] * 100
+    else:
+        pct = 0.0
+    print(f"去掉重复/无效: {stats['dedup_removed']} 行 ({pct:.2f}%)")
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
