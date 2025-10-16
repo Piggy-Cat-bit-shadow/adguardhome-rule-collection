@@ -22,3 +22,4 @@ https://filters.adtidy.org/android/filters/2_optimized.txt
 https://filters.adtidy.org/android/filters/11_optimized.txt
 https://www.i-dont-care-about-cookies.eu/abp/
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&mimetype=plaintext
+https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
