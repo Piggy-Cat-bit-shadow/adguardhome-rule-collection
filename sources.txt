@@ -6,7 +6,7 @@ https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt
 
 # 官方列表
 # AdGuard DNS filter
-# https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
 https://filters.adtidy.org/android/filters/15_optimized.txt
 # AdAway Default Blocklist
 # https://adaway.org/hosts.txt
@@ -20,9 +20,9 @@ https://filters.adtidy.org/android/filters/2_optimized.txt
 # https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&mimetype=plaintext
 # https://www.i-dont-care-about-cookies.eu/abp/
 # Easylist中国
-# https://easylist-downloads.adblockplus.org/easylistchina.txt
-# https://easylist-downloads.adblockplus.org/easylist.txt
-# https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
+https://easylist-downloads.adblockplus.org/easylistchina.txt
+https://easylist-downloads.adblockplus.org/easylist.txt
+https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
 # AdGuard中文
 https://filters.adtidy.org/android/filters/224_optimized.txt
 # 移动
@@ -33,7 +33,7 @@ https://filters.adtidy.org/android/filters/11_optimized.txt
 # https://small.oisd.nl
 
 # 规则合集
-https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
+# https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
 https://raw.githubusercontent.com/damengzhu/abpmerge/main/abpmerge.txt
