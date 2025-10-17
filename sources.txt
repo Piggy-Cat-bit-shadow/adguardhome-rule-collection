@@ -9,8 +9,8 @@ https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt
 https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
 https://filters.adtidy.org/android/filters/15_optimized.txt
 # AdAway Default Blocklist
-https://adaway.org/hosts.txt
-https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt
+# https://adaway.org/hosts.txt
+# https://adguardteam.github.io/HostlistsRegistry/assets/filter_2.txt
 # AdRules DNS List
 https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
 # 基础
@@ -29,9 +29,8 @@ https://filters.adtidy.org/android/filters/224_optimized.txt
 https://filters.adtidy.org/android/filters/11_optimized.txt
 # 恼人
 # https://filters.adtidy.org/android/filters/14_optimized.txt
-https://badmojr.github.io/1Hosts/Lite/adblock.txt
-https://adaway.org/hosts.txt
-https://small.oisd.nl
+# https://badmojr.github.io/1Hosts/Lite/adblock.txt
+# https://small.oisd.nl
 
 # 规则合集
 https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
