@@ -1,26 +1,34 @@
+# 小规则
 https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt
-https://filters.adtidy.org/android/filters/15_optimized.txt
-https://badmojr.github.io/1Hosts/Lite/adblock.txt
 https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt
+# 官方列表
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
+https://filters.adtidy.org/android/filters/15_optimized.txt
+https://filters.adtidy.org/android/filters/14_optimized.txt
+https://filters.adtidy.org/android/filters/2_optimized.txt
+https://filters.adtidy.org/android/filters/11_optimized.txt
+https://badmojr.github.io/1Hosts/Lite/adblock.txt
+https://adaway.org/hosts.txt
+https://small.oisd.nl
+https://adaway.org/hosts.txt
+https://www.i-dont-care-about-cookies.eu/abp/
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&mimetype=plaintext
+# 规则合集
 https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt
 https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
-https://raw.githubusercontent.com/damengzhu/abpmerge/main/abpmerge.txt
-https://raw.githubusercontent.com/Piggy-Cat-bit-shadow/adguard-rule-merge/main/custom_whitelist.txt
-https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
-https://small.oisd.nl
 https://easylist-downloads.adblockplus.org/easylistchina.txt
 https://easylist-downloads.adblockplus.org/easylist.txt
-https://adaway.org/hosts.txt
-# https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-# https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
-# https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-# https://filters.adtidy.org/android/filters/14_optimized.txt
-https://filters.adtidy.org/android/filters/2_optimized.txt
-https://filters.adtidy.org/android/filters/11_optimized.txt
-# https://www.i-dont-care-about-cookies.eu/abp/
-# https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&mimetype=plaintext
-# https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
-# https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt
+https://raw.githubusercontent.com/damengzhu/abpmerge/main/abpmerge.txt
+https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
+https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt
+# 其他规则
+https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+# 白名单
+https://raw.githubusercontent.com/Piggy-Cat-bit-shadow/adguard-rule-merge/main/custom_whitelist.txt
+
+
