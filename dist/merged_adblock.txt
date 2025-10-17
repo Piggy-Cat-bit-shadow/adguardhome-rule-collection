@@ -1,17 +1,13 @@
 ! Unified Adblock list for AdGuard Home (DNS-only)
-! Generated at: 2025-10-17 11:49:22 UTC
+! Generated at: 2025-10-17 11:52:37 UTC
 ! Sources:
 !  - https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt
 !  - https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 !  - https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 !  - https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt
-!  - https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt
 !  - https://filters.adtidy.org/android/filters/15_optimized.txt
 !  - https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt
 !  - https://filters.adtidy.org/android/filters/2_optimized.txt
-!  - https://easylist-downloads.adblockplus.org/easylistchina.txt
-!  - https://easylist-downloads.adblockplus.org/easylist.txt
-!  - https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
 !  - https://filters.adtidy.org/android/filters/224_optimized.txt
 !  - https://filters.adtidy.org/android/filters/11_optimized.txt
 !  - https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
@@ -7520,7 +7516,6 @@
 ||adbedgeexp.aircanada.com^
 ||adbehavior.ximalaya.com^
 ||adbetclickin.pink^
-||adbetnet.com^
 ||adbetnetwork.com^
 ||adbeuch.cn^
 ||adbinead.com^
@@ -11833,7 +11828,6 @@
 ||airdrop-alarm.net^
 ||airdrop-manager.ru^
 ||airfind.com^
-||airgamtoackumt.com^
 ||airgeecigee.net^
 ||airierpoiesis.cyou^
 ||airiestbawdric.world^
@@ -42820,7 +42814,6 @@
 ||dist.belnk.com^
 ||distancedreamboatstoic.com^
 ||distancesets.com^
-||distant-branch.pro^
 ||distant-front.pro^
 ||distant-structure.pro^
 ||distf.kankan.com^
@@ -44118,7 +44111,6 @@
 ||dqefxd.kaigoworker.jp^
 ||dqewifvxrftjb.com^
 ||dqfhxv.paulcamper.de^
-||dqfozxfwqiv.com^
 ||dqfre.helloadorn.com^
 ||dqfzbnhbqeqox.space^
 ||dqgjkrsabhnqd.space^
@@ -46923,7 +46915,6 @@
 ||eemseptouby.net^
 ||eemsouftas.com^
 ||eenaftaubutsarg.com^
-||eenaimtilreedso.net^
 ||eennme.vidaxl.sk^
 ||eensartouz.net^
 ||eensatsoah.net^
@@ -48981,7 +48972,6 @@
 ||epixkf.dentrodahistoria.com.br^
 ||epjgtvmmfnqiq.website^
 ||epjqrr.beautifulskin.jp^
-||epjxsmryzypay.store^
 ||epl.paypal-communication.com^
 ||epldjrxblnvpa.store^
 ||eplgb.properhealth.com^
@@ -53511,7 +53501,6 @@
 ||formalcrock.digital^
 ||formalhood.com^
 ||formalitydetached.com^
-||formalswingsubquery.com^
 ||formalyzer.com^
 ||formarshtompchan.com^
 ||formatinfo.top^
@@ -53811,7 +53800,6 @@
 ||fpjscdn.net^
 ||fplvbtcwmvc.com^
 ||fpmlkyxazjqzo.website^
-||fpmxmaapfxwud.space^
 ||fpmypm.loveless-shop.jp^
 ||fpmzttsrspqwe.online^
 ||fpnpmcdn.net^
@@ -54936,7 +54924,6 @@
 ||fznlsnfka.com^
 ||fznpq.com^
 ||fzojq.info^
-||fzpiozxydotyb.website^
 ||fzpjb.gardentowerproject.com^
 ||fzppzjvpzyett.site^
 ||fzqfoil.cn^
@@ -62859,7 +62846,6 @@
 ||gyjinchuang.vip^
 ||gylavpnvbaacd.online^
 ||gylor.xyz^
-||gyluzaaglmzyd.site^
 ||gymea.site^
 ||gymnasiumfilmgale.com^
 ||gymnasiumvestigeking.com^
@@ -80155,7 +80141,6 @@
 ||lndjj.com^
 ||lnevgpyqncwpj.life^
 ||lnezkw.iturbo.fr^
-||lnfksfxtuojmk.site^
 ||lnfncvjaweewi.tech^
 ||lnfqk.showerenvy.com^
 ||lnfund.org.cn^
@@ -100255,7 +100240,6 @@
 ||oajkd.youngla.com^
 ||oajv.cn^
 ||oakandfort.org^
-||oakboymasques.click^
 ||oakbustrp.com^
 ||oakchokerfumes.com^
 ||oakesiapedata.qpon^
@@ -115626,7 +115610,6 @@
 ||rfr-69.com^
 ||rfrjuuxqpmt.com^
 ||rfsquk.medicaresavingslab.com^
-||rfsuncnlyanyarn.com^
 ||rfto9i.icu^
 ||rftp.sugaredandbronzed.com^
 ||rftslb.com^
@@ -134463,7 +134446,6 @@
 ||sr7pv7n5x.com^
 ||sra-px.cdn-fileserver.com^
 ||srabwu.wordans.es^
-||srahihdzoha.com^
 ||srasomqmogkfpc.net^
 ||srbbss.bradford.net.nz^
 ||srbnxr.blair.com^
@@ -158501,7 +158483,6 @@
 ||turkey.tella.tv^
 ||turkeychoice.com^
 ||turkifyargyria.rest^
-||turkizegoety.shop^
 ||turkstench.com^
 ||turmjpzcrovzn.online^
 ||turmoilragcrutch.com^
@@ -162998,7 +162979,6 @@
 ||vevikynr.com^
 ||vevrpwimcf.com^
 ||vewbab.entertainmentearth.com^
-||vexabenkskalsff.com^
 ||vexclean-ss.checkoutera.com^
 ||vexclean-ss.olladeals.com^
 ||vexesunpay.help^
@@ -168641,7 +168621,6 @@
 ||wrigglefinviewed.com^
 ||wringbible.com^
 ||wristhunknagging.com^
-||wristseeingscald.com^
 ||writeaffectionately.com^
 ||writehopedcrashed.com^
 ||writerartist.com^
@@ -170092,7 +170071,6 @@
 ||xficidaqdoxv.com^
 ||xfihllnrdxnvr.site^
 ||xfjptlrwocfkx.one^
-||xflnjtnmywule.website^
 ||xflsj.com^
 ||xfmybdtedhzel.website^
 ||xfnhahexahsuwv.com^
